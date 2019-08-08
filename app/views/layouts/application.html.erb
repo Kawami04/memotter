@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="UTF-8" />
+    <title>memotter</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <!--トップページへのリンクにしてください-->
+        <a href="/">memotter</a>
+      </div>
+      <ul class="header-menus">
+        <li>
+      <!--サービス紹介ページへのリンクにしてください-->
+          <a href="/pages/help">memotterとは</a>
+          <a href="sign">新規登録</a>
+          <a href="index">投稿一覧</a>
+          <a href="logout">ログアウト</a>
+
+        </li>
+      </ul>
+    </header>
+    <div class="main top-main">
+      <%= yield %>
+    </div>
+  </body>
+</html>
