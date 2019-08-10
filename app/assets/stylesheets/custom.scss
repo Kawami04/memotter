@@ -8,6 +8,49 @@ html {
   line-height: 1.7;
   letter-spacing: 1px;
 }
+h1, h2 {
+  font-weight: 100;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.btn-white {
+  color: #fff;
+  border: 1px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.top-hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../image/memo3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.top-hero-container {
+  padding-top: 220px;
+  h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+}
 
 ul, li {
   list-style-type: none;
@@ -36,6 +79,7 @@ form input[type="submit"] {
 }
 
 /* 共通レイアウト ================================ */
+
 body {
   color: #2d3133;
   background-color: #3ecdc6;
@@ -52,8 +96,8 @@ body {
   background-color: #f5f8fa;
 }
 
-
 /* ヘッダー ================================ */
+
 header {
   height: 64px;
   position: absolute;
@@ -67,49 +111,44 @@ header {
   color: white;
   font-size: 22px;
   line-height: 64px;
-}
-
-.header-logo a{
-  color: white;
-  font-size: 42px;
+  a {
+    color: white;
+    font-size: 42px;
+  }
 }
 
 .header-menus {
   float: right;
   padding-right: 20px;
-}
-
-.header-menus li {
-  float: left;
-  line-height: 64px;
-  font-size: 13px;
-  color: white;
-  padding-left: 15px;
-}
-
-.header-menus a {
-  float: left;
-  font-size: 14px;
-  color: white;
-  padding-left: 12px;
-}
-
-.header-menus .fa {
-  padding-right: 5px;
-}
-
-.header-menus input[type="submit"] {
-  padding: 0 20px;
-  float: left;
-  line-height: 64px;
-  color: white;
-  margin: 0;
-  font-size: 13px;
+  li {
+    float: left;
+    line-height: 64px;
+    font-size: 13px;
+    color: white;
+    padding-left: 15px;
+  }
+  a {
+    float: left;
+    font-size: 14px;
+    color: white;
+    padding-left: 12px;
+  }
+  .fa {
+    padding-right: 5px;
+  }
+  input[type="submit"] {
+    padding: 0 20px;
+    float: left;
+    line-height: 64px;
+    color: white;
+    margin: 0;
+    font-size: 13px;
+  }
 }
 
 /* top ================================ */
+
 .top-main {
-  padding: 200px 0 100px;
   text-align: center;
   position: absolute;
   top: 0;
@@ -128,33 +167,33 @@ header {
   position: relative;
 }
 
-.top-main h2 {
-  font-size: 100px;
-  font-weight: 500;
-  line-height: 1.3;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
-}
-
-.top-main p {
-  font-size: 50px;
+.top-main {
+  h2 {
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 50px;
+  }
 }
 
 /* about ================================ */
+
 .about-main {
   padding: 180px 8% 0;
   color: white;
-}
-
-.about-main h2 {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.about-main p {
-  font-weight: 200;
-  font-size: 20px;
+  h2 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  p {
+    font-weight: 200;
+    font-size: 20px;
+  }
 }
 
 .about-img {
@@ -162,6 +201,7 @@ header {
 }
 
 /* フォーム================================ */
+
 .form {
   max-width: 600px;
   margin: 0 auto;
@@ -184,33 +224,33 @@ header {
   color: #ff4d75;
 }
 
-.form input {
-  width: 100%;
-  border: 1px solid #d8dadf;
-  padding: 10px;
-  color: #57575f;
-  font-size: 16px;
-  letter-spacing: 2px;
-  border-radius: 2px;
-}
-
-.form textarea {
-  width: 100%;
-  min-height: 110px;
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-
-.form input[type="submit"] {
-  background-color: #3ecdc6;
-  color: white;
-  cursor: pointer;
-  font-weight: 300;
-  width: 120px;
-  border-radius: 2px;
-  margin-top: 8px;
-  margin-bottom: 0;
-  float: right;
+.form {
+  input {
+    width: 100%;
+    border: 1px solid #d8dadf;
+    padding: 10px;
+    color: #57575f;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 2px;
+  }
+  textarea {
+    width: 100%;
+    min-height: 110px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  input[type="submit"] {
+    background-color: #3ecdc6;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+    width: 120px;
+    border-radius: 2px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    float: right;
+  }
 }
 
 .form-body:after {
@@ -220,6 +260,7 @@ header {
 }
 
 /* フラッシュ ================================ */
+
 .flash {
   padding: 10px 0;
   color: white;
@@ -262,10 +303,25 @@ header {
   background-color: #464646;
 
   .users-new-container {
-    padding-top: 220px;
+    padding-top: 180px;
 
+    h1, .h1 {
+      font-size: 45px;
+      padding: 50px;
+      text-shadow: 0 0 6px black
+    }
+    form {
+      display: block;
+      margin-top: 0em;
+      text-shadow: 0 0 6px black
+    }
     .form-group {
       margin-bottom: 20px;
     }
+    .btn-block {
+    display: block;
+    width: 100%;
+    text-shadow: 0 0 6px black
+}
   }
 }
