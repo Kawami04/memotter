@@ -13,17 +13,45 @@
   <body>
     <header>
       <div class="header-logo">
-        <!--トップページへのリンクにしてください-->
-        <a href="/">memotter</a>
+        <%= link_to root_path do %>
+        <span>memotter</span>
+        <% end %>
       </div>
       <ul class="header-menus">
-        <li>
-      <!--サービス紹介ページへのリンクにしてください-->
-          <a href="/pages/help">memotterとは</a>
-          <a href="index">投稿一覧</a>
-          <a href="logout">ログアウト</a>
+        <% if logged_in? %>
+          <li>
+            <%= link_to "index" do %>
+              <span>投稿一覧</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "/pages/help" do %>
+              <span>memotterとは</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "logout" do %>
+              <span>ログアウト</span>
+            <% end %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to new_user_path do %>
+              <span>新規登録</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to login_path do %>
+              <span>ログイン</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "/pages/help" do %>
+              <span>memotterとは</span>
+            <% end %>
+          </li>
 
-        </li>
+        <% end %>
       </ul>
     </header>
     <div class="main top-main">
