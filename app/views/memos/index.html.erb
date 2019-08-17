@@ -1,0 +1,17 @@
+<div class="memo-index-wrapper">
+  <div class="container">
+    <% @memos.each do |memo| %>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="memo-index-single">
+            <h3 class="memo-author">
+            </h3>
+            <p1 class="memo-text">
+              <%= memo.main %>
+            </p1>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
