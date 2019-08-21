@@ -82,7 +82,7 @@ form input[type="submit"] {
 
 body {
   color: #2d3133;
-  background-color: #fff;
+  background-color: white;
   margin: 0;
   min-height: 1vh;
 }
@@ -115,7 +115,7 @@ header {
   line-height: 64px;
   a {
     color: white;
-    font-size: 42px;
+    font-size: 48px;
     text-shadow: 0 0 6px black
   }
 }
@@ -132,7 +132,7 @@ header {
   }
   a {
     float: left;
-    font-size: 14px;
+    font-size: 18px;
     color: white;
     padding-left: 12px;
     text-shadow: 0 0 6px black
@@ -304,7 +304,11 @@ header {
   text-shadow: 0 0 6px black
 }
 .memo-new-wrapper {
-  padding-top: 200px;
+  background-color: #d3d3d3;
+  padding-top: 250px;
+  .container {
+    padding-bottom: 360px;
+  }
   .text-center {
     color: #fff;
     text-align: center;
@@ -326,6 +330,9 @@ header {
 }
 .form-control {
   height: 45px;
+  border: 3px solid #cd853f;
+  border-radius: 10px;
+
 }
 
 .users-new-wrapper {
@@ -370,19 +377,22 @@ header {
 
 .memo-index-wrapper {
   padding-top: 150px;
+  padding-bottom: 50px;
   // height: 900px;
   background-color: #d3d3d3;
   .memo-index-single {
-    white-space: pre-line;
-    color: black;
-    background-color: #f5f5f5;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-top: 3px;
-    border: 1px solid #e6ecf0;
-    border-radius: 3px;
+     color: black;
+      background-color: #f5f5f5;
+      padding: 14px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      border: 3px solid #cd853f;
+      border-radius: 10px;
 
     .memo-text {
+      a {
+        font-size: 16px;
+      }
     }
   }
 }
