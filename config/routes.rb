@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
 
+  # get    "memos",    to: "memos#index"
+
+  get "memos/:id",   to: "memos#show"
+
   resources :users
   resources :memos
 end
