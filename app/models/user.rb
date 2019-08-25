@@ -6,5 +6,6 @@ class User < ApplicationRecord
   has_secure_password
 
   has_many :memos
+  has_many :favorites
 
 end

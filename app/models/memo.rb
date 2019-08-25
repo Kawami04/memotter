@@ -3,4 +3,5 @@ class Memo < ApplicationRecord
   validates :main, presence: true
 
   belongs_to :user
+  has_many :favorites
 end

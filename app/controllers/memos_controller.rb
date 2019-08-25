@@ -18,8 +18,9 @@ class MemosController < ApplicationController
   end
 
   def show
+    @memo = Memo.find_by(id: params[:id])
   end
-  
+
   private
   def memo_params
     params.require(:memo).permit(:main)
