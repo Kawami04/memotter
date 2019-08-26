@@ -15,6 +15,9 @@
             <p1 class="memo-text">
               <%= link_to memo.main,memo %>
             </p1>
+            <%= link_to favorites_path(memo_id: memo.id), method: :post do %>
+            <%= image_tag 'icons/star-black.png', class: 'memo-index-icon' %>
+            <% end %>
           </div>
         </div>
       </div>
