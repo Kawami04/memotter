@@ -3,6 +3,10 @@ class FavoritesController < ApplicationController
     @favorite_memos = current_user.favorite_memos
   end
 
+  # def show
+  #   @favorite_memos = current_user.favorite_memos
+  # end
+
   def create
     favorite = Favorite.new
     favorite.user_id = current_user.id
