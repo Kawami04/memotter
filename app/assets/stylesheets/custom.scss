@@ -396,12 +396,16 @@ header {
     border-radius: 10px;
 
     .memo-text {
+      p {
+        border-bottom: 2px solid #d3d3d3;
+      }
       a {
         // padding-top: 20px;
         font-size: 16px;
       }
     }
     .memo-index-icon {
+      // float: right;
       width: 23px;
       height: 23px;
     }
@@ -413,7 +417,14 @@ header {
   padding-bottom: 450px;
   background-color: #d3d3d3;
   .memo-show-title {
+    color: white;
     padding-bottom: 10px;
+    text-shadow: 0 0 6px black
+  }
+  .memo-index-icon {
+    // float: right;
+    width: 23px;
+    height: 23px;
   }
   .memo-show-single {
     color: black;

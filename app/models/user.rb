@@ -5,7 +5,7 @@ class User < ApplicationRecord
 
   has_secure_password
 
-  has_many :memos
+  has_many :memos, ->{order("updated_at DESC")}
   has_many :favorites
   has_many :favorite_memos, through: :favorites, source: 'memo'
 

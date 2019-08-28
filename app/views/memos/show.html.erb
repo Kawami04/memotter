@@ -5,8 +5,17 @@
         <h1 class="memo-show-title">メモ詳細</h1>
         <div class="memo-show-single">
           <p1 class="memo-show-text">
-            <%= @memo.main %>
+            <%= simple_format(@memo.main) %>
           </p1>
+          <% if !@memo.favorite_users.include?(current_user) %>
+            <%= link_to favorites_path(memo_id: @memo.id), method: :post do %>
+              <%= image_tag 'icons/star-black.png', class: 'memo-index-icon' %>
+            <% end %>
+          <% else %>
+            <%= link_to favorites_path(memo_id: @memo.id), method: :delete do %>
+              <%= image_tag 'icons/star-yellow.png', class: 'memo-index-icon' %>
+            <% end %>
+          <% end %>
         </div>
       </div>
     </div>
