@@ -7,5 +7,6 @@ class User < ApplicationRecord
 
   has_many :memos
   has_many :favorites
+  has_many :favorite_memos, through: :favorites, source: 'memo'
 
 end

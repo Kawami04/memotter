@@ -1,6 +1,7 @@
 class MemosController < ApplicationController
   def index
-    @memos = Memo.all
+    @memos = Memo.all.includes(:favorite_users)
+    @memo = Memo.all.order(created_at: :desc)
   end
   def new
     @memo = Memo.new
