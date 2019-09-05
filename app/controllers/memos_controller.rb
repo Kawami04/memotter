@@ -16,6 +16,13 @@ class MemosController < ApplicationController
     end
   end
 
+  def destroy
+    @memo = Memo.find_by(id: params[:id])
+    @memo.destroy
+    redirect_to memos_path
+  end
+
+
   def show
     @memo = Memo.find_by(id: params[:id])
   end
