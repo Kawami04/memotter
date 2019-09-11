@@ -399,7 +399,6 @@ header {
         border-bottom: 2px solid #d3d3d3;
       }
       a {
-        // padding-top: 20px;
         font-size: 16px;
       }
     }
@@ -407,6 +406,14 @@ header {
       // float: right;
       width: 23px;
       height: 23px;
+    }
+    .memo-index-destroy a{
+      font-size: 16px;
+      color: red;
+      float: right;
+      position: relative;
+      bottom: 20px;
+      right: 5px;
     }
   }
 }
@@ -424,11 +431,21 @@ header {
     // float: right;
     width: 23px;
     height: 23px;
+    // padding-top: 1px;
   }
+  .memo-show-destroy a {
+   font-size: 16px;
+   color: red;
+   float: right;
+   position: relative;
+   bottom: 20px;
+   right: 5px;
+
+ }
   .memo-show-single {
     color: black;
     background-color: #f5f5f5;
-    padding: 14px;
+    padding: 5px;
     margin-top: 3px;
     margin-bottom: 3px;
     border: 3px solid #cd853f;

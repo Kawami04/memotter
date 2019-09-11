@@ -16,7 +16,9 @@
               <%= image_tag 'icons/star-yellow.png', class: 'memo-index-icon' %>
             <% end %>
           <% end %>
+          <div class="memo-show-destroy">
           <%= link_to "削除", "/memos/#{@memo.id}/destroy", method: :delete %>
+          </div>
         </div>
       </div>
     </div>
