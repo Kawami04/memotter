@@ -433,6 +433,13 @@ header {
     height: 23px;
     // padding-top: 1px;
   }
+  .memo-show-edit a {
+    font-size: 16px;
+    float: left;
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+  }
   .memo-show-destroy a {
    font-size: 16px;
    color: red;

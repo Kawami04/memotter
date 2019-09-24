@@ -27,6 +27,14 @@ class MemosController < ApplicationController
     @memo = Memo.find_by(id: params[:id])
   end
 
+  def edit
+    @memo = Memo.find_by(id: params[:id])
+  end
+  def update
+    @memo = Memo.find_by(id: params[:id])
+    @memo.update(title: params[:title])
+    redirect_to("memos_path")
+  end
   private
   def memo_params
     params.require(:memo).permit(:main)

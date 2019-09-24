@@ -1,0 +1,14 @@
+<div class="panel container" style="padding-top:10vh;">
+  <div class="panel-header">
+    <h1>編集する</h1>
+  </div>
+  <div class="panel-body">
+    <%= form_for @memo do |f| %>
+      <div class="form-group">
+        <%= f.label :main,"メモを編集" %>
+        <%= f.text_area :main,class: "form-control", rows:10 %>
+        <%= f.submit "メモを更新",class: "btn btn-info btn-block",style: "margin-top:30px;" %>
+      </div>
+    <% end %>
+  </div>
+</div>
