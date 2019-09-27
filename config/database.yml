@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: memotter_production
-  username: memotter
-  password: <%= ENV['MEMOTTER_DATABASE_PASSWORD'] %>
+adapter: postgresql
+encoding: unicode
+pool: 5
